@@ -22,7 +22,7 @@ export default function AviatorPredictionApp() {
 
   // Function to call backend and get prediction list
   const handlePredict = async () => {
-    const res = await fetch("https://aviator-pro-back.onrender.com/predict", {
+    const res = await fetch("https://aviator-pro-backend.onrender.com/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ history, bankroll }),
